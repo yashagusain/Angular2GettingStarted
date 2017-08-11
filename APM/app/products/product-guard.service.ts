@@ -7,7 +7,7 @@ constructor(private _router :Router){
     
 }
 
-    canActivate(route :ActivatedRouteSnapshot) : boolean{
+canActivate(route :ActivatedRouteSnapshot) : boolean{
         let id = +route.url[1].path;
         if(isNaN(id) || id<1){
             alert('Invalid product id');

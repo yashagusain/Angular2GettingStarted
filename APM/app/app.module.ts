@@ -10,7 +10,8 @@ import { RouterModule } from "@angular/router";
 import { ProductModule } from "./products/product.module";
 
 @NgModule({
-  imports: [ BrowserModule,
+  imports: [ 
+  BrowserModule,
   HttpModule,
   RouterModule.forRoot([
     {path:'welcome',component:WelcomeComponent},
@@ -20,8 +21,8 @@ import { ProductModule } from "./products/product.module";
   ProductModule
   ],
   declarations: [
-       AppComponent ,
-       WelcomeComponent],
+  AppComponent ,
+  WelcomeComponent],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
